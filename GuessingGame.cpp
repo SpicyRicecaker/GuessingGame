@@ -44,9 +44,11 @@ int main()
       NumOfGuesses++;
     }
     //Once the user has guessed the num send a toast and ask if they want to play again
-    cout << "Congrats! You guessed the number *" << ActualNum << " *in *" << NumOfGuesses << "* tries!" << endl;
+    cout << "Congrats! You guessed the number *" << ActualNum << "* in *" << NumOfGuesses << "* tries!" << endl;
     cout << "Do you want to play again? (Y/N)" << endl;
     NumOfGuesses = 0;
+    GuessedNum = -1;
+   
     cin >> pl;
 
     //If they said no end game, otherwise the game loop continues
